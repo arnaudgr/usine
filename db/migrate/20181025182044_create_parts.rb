@@ -1,0 +1,9 @@
+class CreateParts < ActiveRecord::Migration[5.2]
+  def change
+    create_table :parts do |t|
+
+      t.timestamps
+      t.integer :part_number
+    end
+  end
+end
